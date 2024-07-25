@@ -110,7 +110,6 @@ void* listening(void *g){
 
         pthread_t recv_thread;
         pthread_create(&recv_thread, NULL, reciving, (void*)client_code);
-
     }
     return NULL;
 }
@@ -179,7 +178,6 @@ void* reciving(void* ind){
                         }
                     }
                 }
-
             }else if(flag){
 
                 while(TRUE){
@@ -201,7 +199,6 @@ void* reciving(void* ind){
                 }
             }
         }
-
     }
 }
 void send_message(struct recv_info data){
